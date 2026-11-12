@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "Ethnocentric";
+    src: url("../fonts/ethnocentric.ttf") format("truetype");
+}
+
+:root {
+    --black: #000000;
+    --teal: #2EB5C5;
+    --teal-hover: #5FD6E3;
+    --page-bg: #F7FBFC;
+    --surface: #FFFFFF;
+    --text: #101719;
+    --muted-text: #52666B;
+    --border: #B9D5D9;
+    --soft-teal: #DDF4F6;
+    --font-size-xs: 0.8rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1.25rem;
+    --font-size-lg: 1.563rem;
+    --font-size-xl: 1.953rem;
+    --font-size-2xl: 2.441rem;
+    --font-size-3xl: 3.052rem;
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 5rem;
+    --radius-outer: 12px;
+    --radius-inner: 6px;
+    --accent-cultural: #FF5C8A;
+    --accent-sports: #4ADE80;
+    --accent-career: #FBBF24;
+}
+
+/* Dark theme colours */
+[data-theme="dark"] {
+    --page-bg: #101719;
+    --surface: #182326;
+    --text: #F2FAFB;
+    --muted-text: #B7C8CB;
+    --border: #45646A;
+    --soft-teal: #163F45;
+}
+
+/* Page foundation */
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--page-bg);
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: var(--text);
+    font-family: "Ethnocentric", sans-serif;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: var(--font-size-3xl);
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+}
+
+h4 {
+    font-size: var(--font-size-lg);
+}
+
+h5,
+h6 {
+    font-size: var(--font-size-md);
+}
+
+a {
+    color: var(--teal);
+}
+
+a:hover {
+    color: var(--teal-hover);
+}
+
+button,
+.btn {
+    font-family: "Ethnocentric", sans-serif;
+    border-radius: 4px;
+}
+
+.btn-vexon {
+    border: 1px solid var(--teal);
+    background-color: var(--teal);
+    color: var(--black);
+    border-radius: 4px;
+}
+
+.btn-vexon:hover {
+    background-color: var(--teal-hover);
+    color: var(--black);
+}
+
+/* Shared navigation */
+.vexon-navbar {
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    background-color: var(--black);
+    border-bottom: 1px solid #243134;
+}
+
+.vexon-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: var(--radius-inner);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.vexon-brand:hover .brand-icon {
+    transform: rotate(18deg);
+}
+
+.brand-wordmark {
+    width: 112px;
+    height: auto;
+    object-fit: contain;
+}
+
+.vexon-navbar .nav-link {
+    padding: var(--space-xs) var(--space-sm);
+    color: #E6F2F3;
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.04em;
+    transition: color 0.2s ease;
+}
+
+.vexon-navbar .nav-link:hover,
+.vexon-navbar .nav-link.active {
+    color: var(--teal);
+}
+
+/* Hamburger icon border colour */
+.vexon-navbar .navbar-toggler {
+    border-color: var(--teal);
+}
+
+.vexon-navbar .navbar-toggler-icon {
+    filter: none;
+}
+
+.theme-toggle {
+    margin-left: var(--space-sm);
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--teal);
+    background-color: var(--teal);
+    color: var(--black);
+    font-size: var(--font-size-xs);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--teal-hover);
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-toggler:focus,
+.theme-toggle:focus,
+a:focus {
+    outline: 2px solid var(--teal-hover);
+    outline-offset: 3px;
+}
+
+/* Shared footer */
+.vexon-footer {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    background-color: var(--black);
+    color: #E6F2F3;
+    font-size: var(--font-size-xs);
+}
+
+.footer-copyright {
+    margin-bottom: var(--space-sm);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.footer-links a {
+    color: #E6F2F3;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--teal);
+}
+
+.footer-tagline,
+.footer-team {
+    margin-bottom: var(--space-xs);
+}
+
+.footer-tagline {
+    color: var(--teal);
+    font-family: "Ethnocentric", sans-serif;
+}
+
+.footer-team {
+    margin-bottom: 0;
+    color: #B7C8CB;
+}
+
+/* Shared load and hover animations */
+.fade-in-up {
+    animation: fadeInUp 0.6s ease both;
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(46, 181, 197, 0.18);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    .theme-toggle {
+        margin-top: var(--space-sm);
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* Phone adjustments */
+@media (max-width: 576px) {
+    .brand-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .brand-wordmark {
+        width: 96px;
+    }
+
+    .footer-links {
+        gap: var(--space-xs) var(--space-sm);
+    }
+
+    h1 {
+        font-size: var(--font-size-xl);
+    }
+}

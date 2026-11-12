@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Year Fest 27 | VEXON Campus Events Hub</title>
+        <link rel="icon" href="../images/logo-icon.jpg" type="image/jpeg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/home.css">
+    </head>
+    <body>
+        <!-- Shared navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark vexon-navbar">
+            <div class="container">
+                <a class="navbar-brand vexon-brand" href="home.html" aria-label="VEXON Campus Events Hub home">
+                    <img class="brand-icon" src="../images/logo-icon.jpg" alt="VEXON three gear logo">
+                    <img class="brand-wordmark" src="../images/logo-wordmark.jpg" alt="VEXON">
+                </a>
+
+                <!-- Hamburger button for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vexon-nav-collapse" aria-controls="vexon-nav-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible link group -->
+                <div class="collapse navbar-collapse" id="vexon-nav-collapse">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">Light</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero image -->
+            <section class="home-hero">
+                <img src="../images/hero-banner.jpg" class="img-fluid w-100" alt="VEXON, Explore Beyond Boundaries. New Year Fest 27">
+            </section>
+
+            <!-- New Year Fest 27 introduction -->
+            <section class="container home-intro fade-in-up">
+                <h1>New Year Fest 27 at FAST-NUCES Islamabad</h1>
+                <p>New Year Fest 27 brings FAST-NUCES Islamabad together from 1 to 4 January for code, music, sport and career events built by students.</p>
+                <p>Meet competitors in CS Lab 3, performers in the Main Auditorium and teams at the Cricket Ground during VEXON’s campus festival.</p>
+                <a class="home-button" href="events.html">See New Year Fest events</a>
+            </section>
+
+            <!-- Next big event and countdown -->
+            <section class="container next-event-section fade-in-up">
+                <div class="new-year-fest-panel">
+                    <div class="row align-items-center g-4">
+                        <div class="col-lg-5">
+                            <h2>NEW YEAR FEST 27</h2>
+                            <p class="new-year-fest-date">1 January 2027</p>
+                            <p class="new-year-fest-venue">Opening ceremony · Main Auditorium · 9:00 AM</p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="countdown-area" aria-label="Countdown to New Year Fest 27">
+                                <div class="countdown-grid" id="countdown-grid">
+                                    <div class="countdown-item"><span class="countdown-number" id="days">0</span><span class="countdown-label">Days</span></div>
+                                    <div class="countdown-item"><span class="countdown-number" id="hours">0</span><span class="countdown-label">Hours</span></div>
+                                    <div class="countdown-item"><span class="countdown-number" id="minutes">0</span><span class="countdown-label">Minutes</span></div>
+                                    <div class="countdown-item"><span class="countdown-number" id="seconds">0</span><span class="countdown-label">Seconds</span></div>
+                                </div>
+                                <p class="countdown-message d-none" id="countdown-message">New Year Fest is live</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular events -->
+            <section class="container popular-events-section fade-in-up">
+                <h2 class="section-heading">Popular Events</h2>
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-7">
+                        <article class="popular-card featured-event">
+                            <img class="popular-card-image featured-event-image" src="../images/carousel-3.jpg" alt="Students competing in the Competitive Programming Contest">
+                            <p class="event-type">Academic · 2 January</p>
+                            <h3>Competitive Programming Contest</h3>
+                            <p class="event-details">CS Lab 3 · 10:00 AM · PKR 1,500 per team</p>
+                            <p>Teams of two or three will solve timed algorithm problems during a five-hour contest for FAST-NUCES Islamabad students.</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-5">
+                        <article class="popular-card small-event">
+                            <img class="popular-card-image" src="../images/carousel-1.jpg" alt="Student bands performing at Battle of the Bands">
+                            <p class="event-type">Cultural · 3 January</p>
+                            <h3>Battle of the Bands</h3>
+                            <p class="event-details">Main Auditorium · 6:00 PM · PKR 1,000 per band</p>
+                            <p>Student bands perform original sets for the New Year Fest 27 evening programme.</p>
+                        </article>
+                        <article class="popular-card small-event">
+                            <img class="popular-card-image" src="../images/carousel-4.jpg" alt="FAST-NUCES students playing in the Futsal Championship">
+                            <p class="event-type">Sports · 4 January</p>
+                            <h3>Futsal Championship</h3>
+                            <p class="event-details">Cricket Ground · 11:00 AM · PKR 2,500 per team</p>
+                            <p>Five-player campus teams compete in knockout matches on the final day.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent announcements -->
+            <section class="container announcements-section fade-in-up">
+                <h2 class="section-heading">Recent Announcements</h2>
+                <div class="announcement-list">
+                    <article class="announcement-item">
+                        <time class="announcement-date" datetime="2026-11-12">12 Nov 2026</time>
+                        <div>
+                            <h3>New Year Fest 27 registrations open</h3>
+                            <p>Teams can now register for the Competitive Programming Contest, AI and Data Science Hackathon, Futsal Championship and Esports Tournament.</p>
+                        </div>
+                    </article>
+                    <article class="announcement-item">
+                        <time class="announcement-date" datetime="2026-11-04">04 Nov 2026</time>
+                        <div>
+                            <h3>Main Auditorium sound check scheduled</h3>
+                            <p>Battle of the Bands and Mushaira performers can confirm their sound-check slots with the VEXON events desk before 20 December.</p>
+                        </div>
+                    </article>
+                    <article class="announcement-item">
+                        <time class="announcement-date" datetime="2026-10-28">28 Oct 2026</time>
+                        <div>
+                            <h3>Career pavilion bookings begin</h3>
+                            <p>FAST-NUCES Islamabad societies may submit Job Fair booth requirements and Business Plan Competition equipment requests for 3 January.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Shared footer -->
+        <footer class="vexon-footer">
+            <div class="container text-center">
+                <p class="footer-copyright">&copy; 2026 VEXON</p>
+                <div class="footer-links" aria-label="Footer navigation">
+                    <a href="home.html">Home</a>
+                    <a href="news.html">News</a>
+                    <a href="events.html">Events</a>
+                    <a href="clubs.html">Clubs</a>
+                    <a href="resources.html">Resources</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p class="footer-tagline">Explore Beyond Boundaries.</p>
+                <p class="footer-team">Raid Ali (i260097), Sohaib Zulfiqar (i260145), Riyyan Faisal (i260051)</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/global.js"></script>
+        <script src="../js/home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources | VEXON Campus Events Hub</title>
+    <link rel="icon" href="../images/logo-icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/resources.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark vexon-navbar">
+      <div class="container">
+        <a class="navbar-brand vexon-brand" href="home.html">
+          <img class="brand-icon" src="../images/logo-icon.jpg" alt="VEXON three gear logo">
+          <img class="brand-wordmark" src="../images/logo-wordmark.jpg" alt="VEXON">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vexon-nav-collapse" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="vexon-nav-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clubs.html">Clubs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="theme-toggle" id="theme-toggle" type="button">Light</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container page-content fade-in-up">
+      <h1>Event Resources</h1>
+      <p class="page-lead">Use these simple guides before bringing a New Year Fest 27 activity to FAST-NUCES Islamabad.</p>
+      <ul class="nav nav-tabs resource-tabs" id="resourceTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="venue-tab" data-bs-toggle="tab" data-bs-target="#venue" type="button" role="tab" aria-controls="venue" aria-selected="true">Venue Booking</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="rules-tab" data-bs-toggle="tab" data-bs-target="#rules" type="button" role="tab" aria-controls="rules" aria-selected="false">Event Rules</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="forms-tab" data-bs-toggle="tab" data-bs-target="#forms" type="button" role="tab" aria-controls="forms" aria-selected="false">Downloadable Forms</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false">FAQs</button>
+        </li>
+      </ul>
+      <div class="tab-content resource-content">
+        <div class="tab-pane fade show active" id="venue" role="tabpanel" aria-labelledby="venue-tab">
+          <h2>Book a venue</h2>
+          <ol>
+            <li>Choose an available date and venue.</li>
+            <li>Complete the Venue Booking Form with equipment needs.</li>
+            <li>Send the request to the events desk at least 14 days early.</li>
+            <li>Wait for written confirmation before advertising.</li>
+          </ol>
+          <p>Available venues include Main Auditorium, CS Lab 3, Cricket Ground, Student Centre and Seminar Hall.</p>
+        </div>
+        <div class="tab-pane fade" id="rules" role="tabpanel" aria-labelledby="rules-tab">
+          <h2>Event rules</h2>
+          <ol>
+            <li>Keep the confirmed schedule and venue capacity visible.</li>
+            <li>Bring student cards for team check-in.</li>
+            <li>Keep cables, exits and walkways clear.</li>
+            <li>Use approved sound levels in the Main Auditorium.</li>
+            <li>Return borrowed equipment after the programme.</li>
+          </ol>
+        </div>
+        <div class="tab-pane fade" id="forms" role="tabpanel" aria-labelledby="forms-tab">
+          <h2>Forms</h2>
+          <p>Download a form, complete it and email it to the relevant society contact.</p>
+          <a class="btn btn-vexon form-button" href="../forms/venue-booking-form.pdf" download>Venue Booking Form</a>
+          <a class="btn btn-vexon form-button" href="../forms/event-proposal-form.pdf" download>Event Proposal Form</a>
+          <a class="btn btn-vexon form-button" href="../forms/equipment-request-form.pdf" download>Equipment Request Form</a>
+        </div>
+        <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+          <h2>Frequently asked questions</h2>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Who can propose an event?</button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">FAST-NUCES Islamabad students and registered societies may submit an event proposal through the VEXON events desk.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">When should I book a venue?</button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Send a venue request at least 14 days before the proposed event so the events desk can check availability and equipment needs.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Can societies use CS Lab 3?</button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Yes. Societies may request CS Lab 3 for workshops, contests and approved New Year Fest 27 activities, subject to timetable and equipment approval.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Where is the sports programme?</button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">The Futsal Championship is held at the Cricket Ground, while the Esports Tournament takes place in the Gaming Arena.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">What belongs in a proposal?</button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Include the event title, proposed date, venue, team size, budget, equipment needs and a safety contact.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">How do teams check in?</button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Team captains show their FAST-NUCES student cards at the venue desk before their scheduled event begins.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">Is the Job Fair free?</button>
+              </h3>
+              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Yes. The Job Fair at the Student Centre has free entry for FAST-NUCES Islamabad students.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">Where are cultural events held?</button>
+              </h3>
+              <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Battle of the Bands and Mushaira and Talent Night are held in the Main Auditorium.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq9">Who approves equipment?</button>
+              </h3>
+              <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">The VEXON events desk reviews the Equipment Request Form with campus staff before confirming the request.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq10">How can I ask a question?</button>
+              </h3>
+              <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Use the Contact page to send VEXON a question, feedback message or event proposal.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="vexon-footer">
+      <div class="container text-center">
+        <p class="footer-copyright">&copy; 2026 VEXON</p>
+        <div class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="events.html">Events</a>
+          <a href="clubs.html">Clubs</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer-tagline">Explore Beyond Boundaries.</p>
+        <p class="footer-team">Raid Ali (i260097), Sohaib Zulfiqar (i260145), Riyyan Faisal (i260051)</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/global.js"></script>
+  </body>
+</html>

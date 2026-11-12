@@ -1,0 +1,262 @@
+/* Home page hero and introduction */
+.home-hero {
+    background-color: var(--black);
+}
+
+.home-hero img {
+    max-height: 520px;
+    object-fit: cover;
+}
+
+.home-intro {
+    max-width: 920px;
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.home-intro p {
+    max-width: 760px;
+    margin-bottom: var(--space-sm);
+    color: var(--muted-text);
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: var(--space-sm);
+    padding: var(--space-xs) var(--space-md);
+    border: 1px solid var(--teal);
+    border-radius: 4px;
+    background-color: var(--teal);
+    color: var(--black);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: var(--teal-hover);
+    color: var(--black);
+    transform: translateY(-3px);
+}
+
+/* New Year Fest 27 countdown panel */
+.next-event-section {
+    padding-bottom: var(--space-2xl);
+}
+
+.new-year-fest-panel {
+    padding: var(--space-xl);
+    border: 1px solid var(--teal);
+    border-radius: var(--radius-outer);
+    background-color: var(--black);
+    color: #F2FAFB;
+}
+
+.new-year-fest-panel h2 {
+    margin-bottom: var(--space-sm);
+    color: var(--teal);
+}
+
+.new-year-fest-date {
+    margin-bottom: var(--space-xs);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-lg);
+}
+
+.new-year-fest-venue {
+    margin-bottom: 0;
+    color: #B7C8CB;
+}
+
+.countdown-area {
+    padding-top: var(--space-md);
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xs);
+}
+
+.countdown-item {
+    padding: var(--space-sm) var(--space-xs);
+    border: 1px solid #45646A;
+    border-radius: var(--radius-inner);
+    text-align: center;
+}
+
+.countdown-number {
+    display: block;
+    color: var(--teal);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-lg);
+    line-height: 1.2;
+}
+
+.countdown-label {
+    display: block;
+    margin-top: var(--space-xs);
+    color: #B7C8CB;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+}
+
+.countdown-message {
+    margin-bottom: 0;
+    color: var(--teal);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-md);
+    text-align: center;
+}
+
+/* Popular event layout */
+.popular-events-section {
+    padding-bottom: var(--space-2xl);
+}
+
+.section-heading {
+    margin-bottom: var(--space-lg);
+}
+
+.popular-card {
+    padding: var(--space-lg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-outer);
+    background-color: var(--surface);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.popular-card-image {
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: var(--space-lg);
+    border-radius: var(--radius-inner);
+    object-fit: cover;
+}
+
+.featured-event-image {
+    height: 220px;
+}
+
+.popular-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-6px);
+}
+
+.featured-event {
+    border-left: 5px solid var(--teal);
+}
+
+.event-type {
+    margin-bottom: var(--space-sm);
+    color: var(--teal);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.04em;
+}
+
+.popular-card h3 {
+    margin-bottom: var(--space-sm);
+}
+
+.event-details {
+    margin-bottom: var(--space-sm);
+    color: var(--muted-text);
+    font-size: var(--font-size-xs);
+}
+
+.popular-card p:last-child {
+    margin-bottom: 0;
+}
+
+.small-event + .small-event {
+    margin-top: var(--space-md);
+}
+
+/* Recent announcements list */
+.announcements-section {
+    padding-bottom: var(--space-2xl);
+}
+
+.announcement-list {
+    border-top: 1px solid var(--border);
+}
+
+.announcement-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--space-lg);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--border);
+}
+
+.announcement-date {
+    color: var(--teal);
+    font-family: "Ethnocentric", sans-serif;
+    font-size: var(--font-size-xs);
+    letter-spacing: 0.04em;
+}
+
+.announcement-item h3 {
+    margin-bottom: var(--space-xs);
+    font-size: var(--font-size-md);
+}
+
+.announcement-item p {
+    margin-bottom: 0;
+    color: var(--muted-text);
+}
+
+/* Tablet layout */
+@media (max-width: 768px) {
+    .home-intro,
+    .new-year-fest-panel,
+    .popular-card {
+        padding: var(--space-lg);
+    }
+
+    .popular-card-image {
+        width: 100%;
+    }
+
+    .announcement-item {
+        grid-template-columns: 120px 1fr;
+        gap: var(--space-md);
+    }
+}
+
+/* Phone layout */
+@media (max-width: 576px) {
+    .home-intro {
+        padding-top: var(--space-lg);
+        padding-bottom: var(--space-lg);
+    }
+
+    .new-year-fest-panel,
+    .popular-card {
+        padding: var(--space-md);
+    }
+
+    .popular-card-image {
+        width: 100%;
+        height: 140px;
+        margin-bottom: var(--space-md);
+    }
+
+    .featured-event-image {
+        height: 170px;
+    }
+
+    .countdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .announcement-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+    }
+}
