@@ -51,6 +51,10 @@
 }
 
 .event-card h2 {
+    /* Use Figtree for card titles */
+    font-family:var(--font-title);
+    /* Keep card titles bold */
+    font-weight:700;
     margin:var(--space-sm) 0;
     font-size:var(--font-size-md)
 }

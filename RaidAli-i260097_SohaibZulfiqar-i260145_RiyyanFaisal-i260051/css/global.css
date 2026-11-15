@@ -20,6 +20,8 @@
     --font-size-xl: 1.953rem;
     --font-size-2xl: 2.441rem;
     --font-size-3xl: 3.052rem;
+    /* Card title font */
+    --font-title: "Figtree", "Roboto", sans-serif;
     --space-xs: 0.5rem;
     --space-sm: 1rem;
     --space-md: 1.5rem;
@@ -125,10 +127,12 @@ button,
     color: var(--black);
 }
 
-/* Shared navigation */
+/* Shared navigation height */
 .vexon-navbar {
-    padding-top: var(--space-xs);
-    padding-bottom: var(--space-xs);
+    /* Desktop vertical space */
+    padding-top: 12px;
+    /* Desktop vertical space */
+    padding-bottom: 12px;
     background-color: var(--black);
     border-bottom: 1px solid #243134;
 }
@@ -140,8 +144,8 @@ button,
 }
 
 .brand-icon {
-    width: 42px;
-    height: 42px;
+    /* Desktop gear logo height */
+    height: 40px;
     object-fit: cover;
     border-radius: var(--radius-inner);
     transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -152,8 +156,8 @@ button,
 }
 
 .brand-wordmark {
-    width: 112px;
-    height: auto;
+    /* Desktop wordmark height */
+    height: 28px;
     object-fit: contain;
 }
 
@@ -278,6 +282,16 @@ a:focus {
 
 /* Tablet adjustments */
 @media (max-width: 768px) {
+    .brand-icon {
+        /* Mobile gear logo height */
+        height: 32px;
+    }
+
+    .brand-wordmark {
+        /* Mobile wordmark height */
+        height: 24px;
+    }
+
     .theme-toggle {
         margin-top: var(--space-sm);
         margin-left: 0;
@@ -295,12 +309,13 @@ a:focus {
 /* Phone adjustments */
 @media (max-width: 576px) {
     .brand-icon {
-        width: 36px;
-        height: 36px;
+        /* Small mobile gear logo height */
+        height: 32px;
     }
 
     .brand-wordmark {
-        width: 96px;
+        /* Small mobile wordmark height */
+        height: 24px;
     }
 
     .footer-links {

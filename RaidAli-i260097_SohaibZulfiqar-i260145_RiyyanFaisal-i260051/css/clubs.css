@@ -70,6 +70,10 @@
 }
 
 .society h3 {
+    /* Use Figtree for society card titles */
+    font-family:var(--font-title);
+    /* Keep society titles bold */
+    font-weight:700;
     font-size:var(--font-size-md);
     transition:color .3s ease
 }

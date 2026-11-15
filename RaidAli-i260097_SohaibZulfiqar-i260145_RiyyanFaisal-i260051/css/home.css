@@ -159,6 +159,10 @@
 }
 
 .popular-card h3 {
+    /* Use Figtree for card titles */
+    font-family: var(--font-title);
+    /* Keep card titles bold */
+    font-weight: 700;
     margin-bottom: var(--space-sm);
 }
 
